@@ -121,10 +121,6 @@ hr{
 /*------------------------Стили для карточек------------------------------*/
 .cardd{
 	width: 25%;
-	margin-right: 20px;
-}
-.cardd:last-child{
-	margin-right: 0;
 }
 .cardd-image img{
 	width: 90%;
@@ -146,7 +142,7 @@ hr{
 	width: 60px;
 	height: 5px;
 	background: #ff0000;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 10px;
 }
 /*-----------------------Карусель документов-------------------------*/
