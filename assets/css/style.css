@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext');
+@font-face{
+	font-family: "Font Awesome";
+	    src: url(../fonts/fa-light-300.ttf) format("truetype"), 
+	         url(../fonts/fa-regular-400.ttf) format("truetype"); 
+}
+/*------------------Общие стили---------------*/
+body{
+	font-family: Open Sans;
+	font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+h1{
+	font-size: 36px;
+	color: #ff0000;
+}
+h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+h5{
+	font-size: 16px;
+}
+i{
+	font-family: Font Awesome;
+	color: #000;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+hr{
+	border: 0;
+	    height: 1px;
+	    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.35), rgba(0,0,0,0));
+	    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.35), rgba(0,0,0,0));
+	    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.35), rgba(0,0,0,0));
+	    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.35), rgba(0,0,0,0));
+}
+/*--------------Header стили---------------*/
+.header{
+	margin-top: 10px;
+}
+.phone, .mail{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.fa-phone{
+	font-size: 24px;
+	margin-right: 20px;
+}
+.fa-envelope{
+	font-size: 24px;
+	margin-right: 20px;
+}
+.mail a{
+	color: #000;
+}
+.menu-header{
+	background-color: #dddddd;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.navigation-panel{
+	margin-top: 20px;
+	padding: 0;
+}
+/*--------------Slider стили-----------------*/
+.slider{
+	background-color: #dddddd;
+	padding: 20px 0;
+}
+.slider ul{
+	list-style-type: circle;
+}
+.image{
+	background: url(../img/slide-11.jpg);
+}
+/*---------------Section стили-----------------*/
+.section{
+	padding: 40px 0 80px 0;
+}
+.underscore{
+	height: 5px;
+	width: 60px;
+	background: #ff0000;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.section__button{
+	border: 1px solid #ff0000;
+	width: 150px;
+	height: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	float: right;
+	margin-top: 30px;
+}
+.section__button:hover{
+	background-color: #ff0000;
+	transition: 0.5s ease;
+}
+/*------------------------Стили для карточек------------------------------*/
+.cardd{
+	width: 25%;
+	margin-right: 20px;
+}
+.cardd:last-child{
+	margin-right: 0;
+}
+.cardd-image img{
+	width: 90%;
+	height: 200px
+}
+.cardd-title{
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+	height: 70px;
+}
+.cardd-title-video{
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+	height: 50px
+}
+.cardd-underscore{
+	width: 60px;
+	height: 5px;
+	background: #ff0000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*-----------------------Карусель документов-------------------------*/
+.carousel {
+  position: relative;
+  width: 90%;
+  padding: 10px 40px;
+}
+.carousel img {
+  width: 130px;
+  height: 170px;
+  display: block;
+}
+.arrow {
+  position: absolute;
+  top: 80px;
+  padding: 0;
+  color: #ff0000;
+  background: transparent;
+  border: none;
+}
+.arrow:focus {
+  outline: none;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+.prev {
+  left: 7px;
+}
+.next {
+  right: 7px;
+}
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+.gallery ul {
+  height: 180px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+.gallery li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/*------------------------Footer стили-------------------------*/
+address{
+	margin: 0;
+}
+.nav-link-footer{
+	color: #e31e24;
+}
+.nav-link-footer:hover{
+	color: #e31e24;
+}
+.footer{
+	background-color: #dddddd;
+	font-size: 13px;
+	margin-top: 20px;
+}
+.menu-footer{
+	color: #e31e24;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.mail-footer{
+	color: #e31e24;
+}
+.mail-footer:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: #e31e24;
+}
+.footer-copyright{
+	padding: 30px 0;
+}
