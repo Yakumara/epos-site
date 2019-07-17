@@ -68,13 +68,23 @@ hr{
 .mail a{
 	color: #000;
 }
-.menu-header{
-	background-color: #dddddd;
-	border: 1px solid rgba(0,0,0,0.1);
-}
 .navigation-panel{
 	margin-top: 20px;
 	padding: 0;
+	background-color: #ff0000;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.menu-header{
+	color: #fff;
+}
+.nav-link-header{
+	color: white;
+	border-right: 1px dashed white;
+	width: 150px;
+	text-align: center;
+}
+.nav-link-header:first-child{
+	border-left: 1px dashed white;
 }
 /*--------------Slider стили-----------------*/
 .slider{
@@ -84,8 +94,33 @@ hr{
 .slider ul{
 	list-style-type: circle;
 }
-.image{
-	background: url(../img/slide-11.jpg);
+.text-slide{
+	margin-bottom: 50px;
+}
+.control{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.control_button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	height: 50px;
+	width: 50px;
+	background-color: rgba(0,0,0,0.1);
+	box-sizing: border-box;
+	font-size: 20px;
+}
+.control_button:last-child{
+	margin-left: 5px;
+}
+.control_button:hover{
+	background-color: black;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	color: #fff;
 }
 /*---------------Section стили-----------------*/
 .section{
@@ -144,6 +179,9 @@ hr{
 	background: #ff0000;
 	margin-top: 30px;
 	margin-bottom: 10px;
+}
+.cardd-text{
+	text-align: justify-all;
 }
 /*-----------------------Карусель документов-------------------------*/
 .carousel {
@@ -224,4 +262,9 @@ address{
 }
 .footer-copyright{
 	padding: 30px 0;
+}
+/*------------------------Стили для отедльных элементов-------------------*/
+.about__text{
+	font-size: 20px;
+	text-align: justify;
 }
